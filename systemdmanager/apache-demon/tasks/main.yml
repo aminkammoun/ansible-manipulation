@@ -1,0 +1,6 @@
+---
+- name: stop a linux service
+  ansible.builtin.service:
+    name: "apache2"
+    state: started
+  become: true

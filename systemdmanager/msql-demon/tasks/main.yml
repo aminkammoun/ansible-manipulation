@@ -1,0 +1,7 @@
+---
+- name: mysql
+  ansible.builtin.service:
+    name: "mysql"
+    state: started
+  become: true
+
