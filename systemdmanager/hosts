@@ -1,5 +1,5 @@
 [instances]
-141.94.175.18 ansible_user=amine ansible_ssh_private_key_file=~/.ssh/id_rsa.pub
+10.8.0.11 ansible_user=username ansible_password=amine22102439 ansible_sudo_pass=amine22102439
 
 
 [instances:vars]

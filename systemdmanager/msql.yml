@@ -1,5 +1,5 @@
 ---
 - name: install
-  hosts: local
+  hosts: instances
   roles:
     - msql-demon
