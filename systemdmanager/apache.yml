@@ -1,0 +1,5 @@
+---
+- name: install
+  hosts: instances
+  roles:
+    - apache-demon

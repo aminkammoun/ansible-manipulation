@@ -1,0 +1,11 @@
+---
+- name: rabit mq service
+  ansible.builtin.service:
+    name: "mosquitto"
+    state: stopped
+  become: true
+  register: result
+
+- name: Show result of task
+  debug:
+    var: result
