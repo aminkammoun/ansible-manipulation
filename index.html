@@ -28,7 +28,7 @@
   </body>
   <script src="https://robotn-cloud-server.robotika.systems/socket.io/socket.io.js"></script>
   <script>
-    var socket = io();
+    var socket = io.connect("ws://robotn-cloud-server.robotika.systems");
     console.log("welcome to Ansible manipulation ");
     function openApache() {
       console.log("hello");
