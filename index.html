@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansible</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Ansible Manipulation</h1>
+    </div>
+    <button
+      onclick="openApache()"
+      style="
+        width: 157px;
+        height: 67px;
+        color: white;
+        background-color: #083d77;
+        font-size: 19px;
+        font-weight: bolder;
+        border-radius: 6px;
+        border: solid 2px transparent;
+      "
+    >
+      openApache
+    </button>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    console.log("welcome to Ansible manipulation ");
+    function openApache() {
+      console.log("hello");
+      socket.emit("openApache");
+    }
+  </script>
+</html>

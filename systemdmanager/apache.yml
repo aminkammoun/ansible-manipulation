@@ -1,5 +1,9 @@
 ---
 - name: install
   hosts: instances
+  vars_files:
+    - apache-demon/vars/main.yml
+  vars:
+    - app: "{{app}}"
   roles:
     - apache-demon
